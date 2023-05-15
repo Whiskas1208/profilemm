@@ -15,11 +15,20 @@
 
 <?php
 include "connection.php";
-function ambil_datacustomer() {
+function ambil_customer() {
     $ambildata1 = mysqli_query(conn, "select id_nama from customer");
-    while ($_POST[id_nama] = mysqli_fetch_array($ambildata1))
+    while ($_POST[id_nama] = mysqli_fetch_array($ambildata1, FETCH_ASSOC))
     {
-        $ambil[] = $d;
+        $nama_lengkap = $_POST['nama_lengkap'];
+        $umur = $_POST['umur'];
+        $jenis_kelamin = $_POST['jenis_kelamin'];
+        $kamar_tidur = $_POST['kamar_tidur'];
+        $kamar_mandi = $_POST['kamar_mandi'];
+        $lantai = $_POST['lantai'];
+        $luas_bangunan = $_POST['luas_bangunan'];
+        $luas_tanah = $_POST['luas_tanah'];
+        $furniture = $_POST['furniture'];
+        $lokasi = $_POST['lokasi'];
     }
     return $ambil;
 }
@@ -138,6 +147,7 @@ class Fungsi_Model extends PM_Model {
             $outmain = $core_factorin;
     
             $total = ($main + $outmain)/2;
+            $totalpersen = ($total-5)*100;
 
             $house[] = array(
                 'kamar_tidur' => $kamar_tidur,
@@ -203,7 +213,15 @@ class Fungsi_Model extends PM_Model {
         <h3 class="description2">Apakah sudah sesuai dengan keinginan anda?</h3>
     </header>
 
-    
+    <div class="hasil1">
+    <?php
+
+    echo "
+    <td> $kamar_tidur </td>, <td> $kamar_mandi </td>, <td> $lantai </td>, <td> $luas_bangunan </td>, <td> $luas_tanah </td>, <td> $furniture </td>, <td> $furniture </td>, <td> $hasilpersen "%" </td>
+    ";
+    ?>
+
+</div>
 
     <div class="button3">
     <form method="post">
