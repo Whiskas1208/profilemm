@@ -1,0 +1,43 @@
+body{
+	background-color:#f9f9f9;
+	font-size:20px;
+	color:#111111;
+	font-family: sans-serif;
+	text-align: center;
+}
+ 
+.content{
+	width: 80%;
+	margin: 10px auto;
+}
+ 
+
+header{
+	background-color: white;
+	padding: 20px 10px;
+	border-radius: 25px;
+	border: 1px solid #f0f0f0;
+	margin-bottom: 10px;
+}
+ 
+header h1.title,
+header h3.description{
+	text-align: center;	
+}
+
+.form1{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 15px;
+	background-color: white;
+	padding: 3em;
+	border-radius: 30px;
+  	border-left: 1px solid white;
+  	border-top: 1px solid white;
+  	box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  	text-align: center;
+  	position: relative;
+  	transition: all 0.2s ease-in-out;
+	position: absolute;
+	line-height: 2.5;
+}

@@ -1,0 +1,54 @@
+header h1.title,
+header h3.desc{
+  text-align: center; 
+}
+
+body {
+    width: 80%; 
+    margin: auto;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: rebeccapurple;
+}
+a:active {
+  color: white;
+}
+p {
+  font-size: 110%;
+  color: white;
+}
+#contents {
+    float: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  font-family: sans-serif;
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #fff;
+}
+footer {
+  text-align: center;
+}
